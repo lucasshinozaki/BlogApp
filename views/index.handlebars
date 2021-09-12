@@ -1,0 +1,23 @@
+<div class="jumbotron">
+  <h1 class="display-4">Bem vindo ao Blog de Node</h1>
+  <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem hic officiis est pariatur asperiores expedita minus deleniti recusandae labore vitae culpa, odit maxime! Facere velit sapiente doloribus dolores ea sequi!</p>
+  <hr class="my-4">
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, adipisci ex? Consequuntur ducimus in sit saepe officia dicta nulla tenetur vel iure, quidem possimus! Quia repellat autem asperiores iure magnam?</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Crie uma conta</a>
+  </p>
+</div>
+<hr>
+<h2>Postagens Recentes</h2>
+
+{{#each postagens}}
+<div class="card mt-4">
+    <div class="card-body">
+        <h3>{{titulo}}</h3>
+        <p>{{descricao}}</p>
+        <p>{{conteudo}}</p>
+    </div>
+</div>
+{{else}}
+    <h5>Nenhuma postagem</h5>
+{{/each}}
